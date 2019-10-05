@@ -12,8 +12,8 @@ close all; % closes all figures
 % read images and convert to floating point format
 %imr = imread('../data/dog.bmp');
 
-image1 = im2single(imread('../data/dog.bmp'));
-image2 = im2single(imread('../data/cat.bmp'));
+image1 = im2single(imread('../data/MeherK.png'));
+image2 = im2single(imread('../data/KevalM.png'));
 
 
 
@@ -54,9 +54,12 @@ low_frequencies =  my_imfilter(image1, filter);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 laplacian_filter = [0 1 0; 1 -4 1; 0 1 0];
+
+cutoff_frequency2 = 5; 
+filter2 = fspecial('Gaussian', cutoff_frequency*4+1, cutoff_frequency2);
   
 %high_frequencies = my_imfilter(image2, laplacian_filter);
-high_frequencies = image2 - my_imfilter(image2, filter);
+high_frequencies = image2 - my_imfilter(image2, filter2);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Combine the high frequencies and low frequencies
@@ -69,7 +72,7 @@ figure(1); imshow(low_frequencies)
 figure(2); imshow(high_frequencies + 0.5);
 vis = vis_hybrid_image(hybrid_image);
 figure(3); imshow(vis);
-imwrite(low_frequencies, 'low_frequencies.jpg', 'quality', 95);
-imwrite(high_frequencies + 0.5, 'high_frequencies.jpg', 'quality', 95);
-imwrite(hybrid_image, 'hybrid_image.jpg', 'quality', 95);
-imwrite(vis, 'hybrid_image_scales.jpg', 'quality', 95);
+imwrite(low_frequencies, 'low_frequencies3.jpg', 'quality', 95);
+imwrite(high_frequencies + 0.5, 'high_frequencies3.jpg', 'quality', 95);
+imwrite(hybrid_image, 'hybrid_image3.jpg', 'quality', 95);
+imwrite(vis, 'hybrid_image_scales3.jpg', 'quality', 95);

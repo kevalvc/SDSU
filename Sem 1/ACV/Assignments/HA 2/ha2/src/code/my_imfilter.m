@@ -46,54 +46,28 @@ function op = my_imfilter(image, filter)
         %padHgt = s2(1)/2
         padHgt = floor(s2(1)/2);
         padWdt = floor(s2(2)/2);
-%{
-        if (size(im, 3))==3
-            disp("zyxwv");
-            finalPadMat = zeros(s1(1)+(padHgt*2), s1(2)+(padWdt*2), s1(3));
-            output = zeros(size(im, 1), size(im, 2), size(im, 3));
-            finalPadMat(1+padHgt:(padHgt+s1(1)), 1+padWdt:(padWdt+s1(2)), :) = im;
-%            flr = finalPadMat(3)
-            else
-%}
-            disp("abcde");
-            finalPadMat = zeros(s1(1)+2*padHgt , s1(2)+2*padWdt);
-            output = zeros(size(im, 1), size(im, 2));
-            %output = zeros(size(finalPadMat, 1)-padHgt, size(finalPadMat, 2)-padWdt);
-            finalPadMat(1+padHgt:(padHgt+s1(1)), 1+padWdt:(padWdt+s1(2))) = im;
-%        end
+        disp("abcde");
+        finalPadMat = zeros(s1(1)+2*padHgt , s1(2)+2*padWdt);
+        output = zeros(size(im, 1), size(im, 2));
+        %output = zeros(size(finalPadMat, 1)-padHgt, size(finalPadMat, 2)-padWdt);
+        finalPadMat(1+padHgt:(padHgt+s1(1)), 1+padWdt:(padWdt+s1(2))) = im;
 
         %size(output)
         %size(finalPadMat)
         %imshow(finalPadMat)
         %imshow(filter)
-%{
-        if length((im))==3
-            for dim=1:3
-                for i=1:s1(1)   
-                    for j=1:s1(2)
-                        result = finalPadMat(i:i+(2*padHgt), j:j+(2*padWdt), dim);
-                        %size(result)
-                        %size(fil)
-                        %size(result)
-                        totSum = sum(sum(result.*fil));
-                        output(i, j, dim) = output(totSum);
-                    end
-                end
-            end
-        else
-%}
-            for i=1:s1(1)
-                for j=1:s1(2)
-                    result = finalPadMat(i:i+(2*padHgt), j:j+(2*padWdt));
-                    %size(result)
-                    %size(fil)
-                    %size(result)
-                    totSum = sum(sum(result.*fil));
-                    output(i, j) = (totSum);
-                end
+
+        for i=1:s1(1)
+            for j=1:s1(2)
+                result = finalPadMat(i:i+(2*padHgt), j:j+(2*padWdt));
+                %size(result)
+                %size(fil)
+                %size(result)
+                totSum = sum(sum(result.*fil));
+                output(i, j) = (totSum);
             end
         end
- %   end
+    end
  
 op = zeros(size(image));
 
