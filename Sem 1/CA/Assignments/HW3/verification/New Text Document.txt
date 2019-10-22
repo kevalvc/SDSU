@@ -1,0 +1,15 @@
+Base case: k=1. Suppose that you want to change a value x between c1=1 (inclusive) and c2=5 (not inclusive), i.e. 1≤x<5. Then, the greedy will take a coin of k=1 and will set x←x−1. That the greedy solves here optimally is more or less trivial.
+
+Induction hypothesis: k. The greedy solves optimally for any value of x such that ck−1≤x<ck.
+
+Induction step: k+1. Show that the greedy solves optimally for any value of x such that ck≤x<ck+1. Then, they use this table that you mention to show that this problem reduces to solving for x←x−ck for which 0≤x−ck<ck+1−ck, which has been treated in the induction hypothesis.
+
+Note that the table - which is the main part of the proof - can be constructed only for specific values of the coins. It does not hold for any possible choice of coin denominations, as they show in their next slide.
+
+https://math.stackexchange.com/questions/2569080/greedy-algorithms-coin-changing-problem-induction
+
+https://stackoverflow.com/questions/13557979/why-does-the-greedy-coin-change-algorithm-not-work-for-some-coin-sets
+
+https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
+
+https://stackoverflow.com/questions/3947867/find-the-least-number-of-coins-required-that-can-make-any-change-from-1-to-99-ce
