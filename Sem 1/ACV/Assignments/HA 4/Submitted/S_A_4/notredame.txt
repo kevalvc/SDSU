@@ -1,0 +1,40 @@
+Saving visualization to vis.jpg
+(  488,  852) to (  520,  804) g.t. point   34 px. Match error    4 px.  correct
+(  810, 1178) to (  796, 1082) g.t. point   28 px. Match error    4 px.  correct
+(  668, 1226) to (  678, 1120) g.t. point   46 px. Match error    9 px.  correct
+(  168,  838) to (  236,  784) g.t. point   55 px. Match error   12 px.  correct
+(  478,  888) to (  390,  836) g.t. point    3 px. Match error  121 px.  incorrect
+(  340,  892) to (  390,  836) g.t. point    3 px. Match error    3 px.  correct
+(  182, 1688) to (  290, 1518) g.t. point    5 px. Match error    2 px.  correct
+(  816, 1120) to (  798, 1036) g.t. point   36 px. Match error    8 px.  correct
+( 1400, 1092) to (  648,  582) g.t. point   68 px. Match error  742 px.  incorrect
+(  782, 1112) to (  770, 1028) g.t. point    3 px. Match error    2 px.  correct
+( 1292, 1456) to ( 1212, 1304) g.t. point   42 px. Match error    1 px.  correct
+(  470,  820) to (  504,  778) g.t. point   54 px. Match error    4 px.  correct
+(  116, 1244) to (  200, 1134) g.t. point    3 px. Match error    4 px.  correct
+(  254,  332) to (  238,  806) g.t. point   56 px. Match error  455 px.  incorrect
+(  544,  734) to (  574,  706) g.t. point   34 px. Match error   18 px.  correct
+(  842, 1144) to (  822, 1054) g.t. point   55 px. Match error   17 px.  correct
+(  662,  448) to ( 1030, 1394) g.t. point  101 px. Match error  974 px.  incorrect
+(  180, 1240) to (  270, 1128) g.t. point   16 px. Match error    3 px.  correct
+(  720,  958) to (  646, 1840) g.t. point   55 px. Match error  941 px.  incorrect
+(  332,  824) to (  504,  778) g.t. point   66 px. Match error  124 px.  incorrect
+(  654,  340) to ( 1204,  682) g.t. point   30 px. Match error  645 px.  incorrect
+(  720, 1214) to (  720, 1112) g.t. point   22 px. Match error   17 px.  correct
+(  748, 1122) to (  742, 1034) g.t. point   36 px. Match error    5 px.  correct
+(  598, 1412) to (  646, 1274) g.t. point   55 px. Match error   10 px.  correct
+(  370,  824) to (  418,  778) g.t. point   61 px. Match error   14 px.  correct
+(  684, 1254) to (  694, 1144) g.t. point   65 px. Match error   10 px.  correct
+(  858, 1274) to (  838, 1162) g.t. point   18 px. Match error    7 px.  correct
+(  210, 1008) to (  286,  928) g.t. point   29 px. Match error    4 px.  correct
+(  722, 1146) to (  720, 1054) g.t. point   68 px. Match error    9 px.  correct
+( 1082,  944) to (  986,  894) g.t. point    8 px. Match error   29 px.  incorrect
+(  420, 1466) to (  492, 1322) g.t. point   66 px. Match error    5 px.  correct
+( 1078, 1328) to ( 1116, 1200) g.t. point   40 px. Match error   94 px.  incorrect
+(  480, 1384) to (  542, 1252) g.t. point   82 px. Match error   26 px.  incorrect
+( 1240,  920) to ( 1138,  880) g.t. point   18 px. Match error    2 px.  correct
+(  250,  296) to (  222, 1024) g.t. point   29 px. Match error  684 px.  incorrect
+(  660,  362) to (  376,  304) g.t. point   52 px. Match error  280 px.  incorrect
+(  956,  988) to (  922,  926) g.t. point   54 px. Match error    2 px.  correct
+25 total good matches, 12 total bad matches
+Saving visualization to eval.jpg
