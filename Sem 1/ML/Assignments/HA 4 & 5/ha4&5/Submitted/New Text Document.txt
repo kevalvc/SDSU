@@ -1,0 +1,59 @@
+Confusion Matrix:
+[[49  4]
+ [ 0 47]]
+Average Accuracy: 0.96
+Per-Class Precision: [1.         0.92156863]
+Per-Class Recall: [0.9245283 1.       ]
+Failure Cases where female was categorized as male or vice versa:
+-1.0 1.0
+-1.0 1.0
+-1.0 1.0
+-1.0 1.0
+True Cases:where female was categorized as female and male as mail
+-1.0 -1.0
+1.0 1.0
+1.0 1.0
+-1.0 -1.0
+1.0 1.0
+-1.0 -1.0
+
+
+Confusion Matrix:
+[[45  1]
+ [ 6 48]]
+Average Accuracy: 0.93
+Per-Class Precision: [0.88235294 0.97959184]
+Per-Class Recall: [0.97826087 0.88888889]
+Failure Cases where female was categorized as male or vice versa:
+1.0 -1.0
+1.0 -1.0
+1.0 -1.0
+-1.0 1.0
+1.0 -1.0
+True Cases:where female was categorized as female and male as mail
+-1.0 -1.0
+1.0 1.0
+1.0 1.0
+1.0 1.0
+1.0 1.0
+-1.0 -1.0
+
+
+
+Confusion Matrix:
+[[46  2]
+ [ 1 51]]
+Average Accuracy: 0.97
+Per-Class Precision: [0.9787234  0.96226415]
+Per-Class Recall: [0.95833333 0.98076923]
+Failure Cases where female was categorized as male or vice versa:
+-1.0 1.0
+1.0 -1.0
+-1.0 1.0
+True Cases:where female was categorized as female and male as mail
+1.0 1.0
+1.0 1.0
+1.0 1.0
+1.0 1.0
+-1.0 -1.0
+1.0 1.0
