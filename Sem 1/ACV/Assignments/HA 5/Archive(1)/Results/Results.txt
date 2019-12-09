@@ -1,0 +1,33 @@
+HOG:
+>> accuracy=0.322222
+>> accuracy=0.366667
+>> confMat
+
+confMat =
+
+    10    11     9
+     8     8    14
+     7     8    15
+
+
+HOC:
+>> accuracy=0.355556
+>> accuracy=0.333333
+>> confMat
+
+confMat =
+
+     0     0    30
+     1     0    29
+     0     0    30
+
+
+SIFT:
+>> accuracy=0.400000
+>> accuracy=0.322222
+>> confMat
+confMat =
+
+     8    13     9
+     7     8    15
+     7    10    13
